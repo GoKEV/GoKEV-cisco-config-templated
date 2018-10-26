@@ -1,0 +1,37 @@
+---
+# vars file for cisco
+vlans:
+  HOME:
+    id: '5'
+  INFRA:
+    id: '10'
+  LAB1: { id: '20' }
+  LAB2: { id: '30' }
+  IOT: { id: '93' }
+  PFSENSE: { id: '98' }
+
+interfaces:
+  - interface: GigabitEthernet0/7
+    description: access port for esxi
+    switchport_mode: access
+    access_vlan: 5
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: GigabitEthernet0/8
+    description: trunked port for esxi
+    switchport_mode: trunk
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans: 10,20,30,98
+  - interface: GigabitEthernet0/9
+    description: Unifi Port
+    switchport_mode: true
+    access_vlan:
+    trunk_native_vlan: 5,93
+    trunk_allowed_vlans: 5
+  - interface: GigabitEthernet0/10
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:

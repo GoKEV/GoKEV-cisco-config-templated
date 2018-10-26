@@ -1,0 +1,56 @@
+---
+# tasks file for cisco
+- name: vlans config
+  ios_config:
+    src: templates/vlan.j2
+  tags: vlan
+
+- name: Configure interfaces
+  ios_interface:
+    name: "{{ item.interface }}"
+    description: "{{ item.description }}"
+  with_items: "{{ interfaces }}"
+
+- name: Disable ports if no description
+  ios_interface:
+    name: "{{ item.interface }}"
+    enabled: False
+  with_items: "{{ interfaces }}"
+  when: item.description == ""
+
+
+- name: Set switchport trunk encapsulation
+  with_items: "{{ interfaces }}"
+  ios_config:
+    lines:
+      - switchport trunk encapsulation dot1q
+    parents: interface "{{ item.interface }}"
+  when: item.switchport_mode
+
+- name: Setup Access Ports
+  ios_l2_interface:
+    name: "{{ item.interface }}"
+    mode: access
+    access_vlan: "{{ item.access_vlan }}"
+  with_items: "{{ interfaces }}"
+  when: item.switchport_trunk
+
+- name: Setup Trunked Ports
+  ios_l2_interface:
+    name: "{{ item.interface }}"
+    mode: trunk
+    trunk_native_vlan: "{{ item.trunk_native_vlan }}"
+    trunk_allowed_vlans: "{{ item.trunk_allowed_vlans }}"
+  with_items: "{{ interfaces }}"
+
+- name: Show VLANs
+  ios_command:
+    commands: show vlan brief
+  register: show_vlan
+
+- debug:
+    var: show_vlan.stdout_lines
+
+#- name: save running to startup when modified
+#  ios_config:
+#    save_when: modified

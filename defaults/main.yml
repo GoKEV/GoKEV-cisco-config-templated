@@ -1,0 +1,49 @@
+---
+# defaults file for cisco
+vlans:
+  - vlan_id: 5
+    vlan_name: HOME
+  - vlan_id: 10
+    vlan_name: INFRA
+  - vlan_id: 20
+    vlan_name: Lab1
+  - vlan_id: 30
+    vlan_name: Lab2
+  - vlan_id: 93
+    vlan_name: IOT
+  - vlan_id: 98
+    vlan_name: PFSENSE
+
+access_ports:
+  - switch_if_no: 15
+    switch_if_vlan: 1
+  - switch_if_no: 16
+    switch_if_vlan: 1
+  - switch_if_no: 33
+    switch_if_vlan: 1
+  - switch_if_no: 34
+    switch_if_vlan: 1
+  - switch_if_no: 35
+    switch_if_vlan: 1
+  - switch_if_no: 36
+    switch_if_vlan: 1
+  - switch_if_no: 38
+    switch_if_vlan: 1
+  - switch_if_no: 39
+    switch_if_vlan: 1
+  - switch_if_no: 40
+    switch_if_vlan: 1
+  - switch_if_no: 41
+    switch_if_vlan: 1
+  - switch_if_no: 42
+    switch_if_vlan: 1 
+
+trunk_ports:
+  - trunk_if_no: 2
+    trunk_if_vlans: 10,20,30,98
+  - trunk_if_no: 3
+    trunk_if_vlans: 5,93
+  - trunk_if_no: 5
+    trunk_if_vlans: 10,20,30,98
+  - trunk_if_no: 6
+    trunk_if_vlans: 5,93

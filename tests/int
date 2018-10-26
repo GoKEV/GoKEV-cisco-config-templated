@@ -1,0 +1,289 @@
+interfaces:
+  - interface: Gi0/1
+    description: ESXi1 Nic 1
+    switchport_mode: access
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/2
+    description: ESXi1 Nic 2
+    switchport_mode: trunk
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/3
+    description: ESXi1 Nic 3
+    switchport_mode: trunk
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/4
+    description: ESXi2 Nic 1
+    switchport_mode: access
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/5
+    description: ESXi2 Nic 2
+    switchport_mode: trunk
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/6
+    description: ESXi2 Nic 3
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/7
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/8
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/9
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/10
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/11
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/12
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/13
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/14
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/15
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/16
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/17
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/18
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/19
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/20
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/21
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/22
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/23
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/24
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/25
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/26
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/27
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/28
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/29
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/30
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/31
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/32
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/33
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/34
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/35
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/36
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/37
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/38
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/39
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/40
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/41
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/42
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/43
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/44
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/45
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/46
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/47
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
+  - interface: Gi0/48
+    description:
+    switchport_mode:
+    access_vlan:
+    trunk_native_vlan:
+    trunk_allowed_vlans:
